@@ -1,0 +1,341 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  background: black;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+}
+canvas {
+  position: fixed;
+}
+
+h2 {
+  margin: 50px 0px 25px 5px;
+  color: #e0e0e0;
+  font-weight: 300;
+}
+
+.center {
+  /* text-align: center; */
+  width: 70%;
+  margin: 10px auto;
+}
+
+
+.z {
+  z-index: 345654;
+}
+
+.nav-wrapper {
+  display: flex;
+  position: sticky;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px auto;
+  width: 70%;
+  height: 50px;
+  border-radius: 5px 5px 10px 10px;
+  padding: 0 25px;
+  background: #444444c3;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  letter-spacing: 5px;
+  color: #667eea;
+  font-size: larger;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+}
+
+.nav-tabs {
+  display: flex;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+}
+.nav-tab {
+  cursor: pointer;
+  z-index: 245432;
+}
+
+.nav-tab:not(:last-child) {
+  padding: 10px 25px;
+  margin: 0;
+  border-right: 1px solid #eee;
+}
+
+.nav-tab:last-child {
+  padding: 10px 0 0 25px;
+}
+
+.nav-tab,
+.menu-btn {
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-tab:hover{
+  text-decoration: underline;
+  color: #667eea;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-section {
+  gap: 71px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card {
+  gap: 25px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  width: 307px;
+  /* border: 2px solid red;
+  border-radius: 12px; */
+}
+
+.play-on-hover {
+  width: 300px;
+  height: 210px;
+  background-size: cover;
+  /* cursor: pointer; */
+  border-radius: 5px;
+  box-shadow: 10px 20px -5px #ccc;
+}
+
+/* Most Played games */
+.p1 {
+  background-image: url(assests/templeRun.png);
+}
+
+.p1:hover {
+  background-image: url(assests/temple.gif);
+}
+
+.p2 {
+  background-image: url(assests/static-safar.jpg);
+}
+
+.p2:hover {
+  background-image: url(assests/e6UTws.gif);
+}
+
+.p3 {
+  background-image: url(assests/static-susi.png);
+}
+
+.p3:hover {
+  background-image: url(assests/susi.gif);
+}
+.p4 {
+  background-image: url(assests/static-supernova.png);
+}
+
+.p4:hover {
+  background-image: url(assests/supernova.gif);
+}
+.p5 {
+  background-image: url(assests/static-dinasour.png);
+}
+
+.p5:hover {
+  background-image: url(assests/dinasour.gif);
+}
+.p6 {
+  background-image: url(assests/static-tunnel-rush.webp);
+}
+
+.p6:hover {
+  background-image: url(assests/tunnel.gif);
+}
+.p7 {
+  background-image: url(assests/static-parkour-race.png);
+}
+
+.p7:hover {
+  background-image: url(assests/parkour-race.gif);
+}
+.p8 {
+  background-image: url(assests/ststic-Retro-Highway.jpg);
+}
+
+.p8:hover {
+  background-image: url(assests/Retro-highway.gif);
+}
+
+/* Upcoming Games... */
+
+.p9 {
+  background-image: url(assests/car\ img.png);
+}
+
+.p9:hover {
+  background-image: url(assests/car.gif);
+}
+
+.p10 {
+  background-image: url(assests/narrow-one.png);
+}
+
+.p10:hover {
+  background-image: url(assests/Narrow.gif);
+}
+.p11 {
+  background-image: url(assests/Run3.jpg);
+}
+
+.p11:hover {
+  background-image: url(assests/Run3.gif);
+}
+.p12 {
+  background-image: url(assests/dragon-fight.png);
+}
+
+.p12:hover {
+  background-image: url(assests/dinasour.gif);
+}
+.p13 {
+  background-image: url(assests/hill\ of\ steel.jpg);
+}
+
+.p13:hover {
+  background-image: url(assests/Hill\ of\ steel.gif);
+}
+.p14 {
+  background-image: url(assests/war-of-caribbean-pirates.png);
+}
+
+.p14:hover {
+  background-image: url(assests/war-of-caribbean-pirates.gif);
+}
+.p15 {
+  background-image: url(assests/templeRun.png);
+}
+
+.p15:hover {
+  background-image: url(assests/temple.gif);
+}
+.p16 {
+  background-image: url(assests/ststic-Retro-Highway.jpg);
+}
+
+.p16:hover {
+  background-image: url(assests/Retro-highway.gif);
+}
+
+@media screen and (max-width: 800px) {
+  .nav-container {
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .nav-tab:not(:last-child) {
+    padding: 20px 25px;
+    margin: 0;
+    border-right: unset;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .nav-tab:last-child {
+    padding: 15px 25px;
+  }
+
+  .menu-btn {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-btn .menu {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #111;
+  }
+
+  .menu-btn .menu:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  .menu-btn .menu:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  #menuToggle:checked + .menu-btn .menu {
+    transition: transform 0.2s ease;
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(1) {
+    transform: translate3d(0, 6px, 0) rotate(45deg);
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(2) {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(3) {
+    transform: translate3d(0, -6px, 0) rotate(-45deg);
+  }
+
+  #menuToggle:checked ~ .nav-container {
+    z-index: 1;
+    display: flex;
+    animation: menu-slide-left 0.3s ease;
+  }
+  @keyframes menu-slide-left {
+    0% {
+      transform: translateX(200px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
