@@ -1,6 +1,6 @@
 Flask==2.0.1
 matplotlib==3.5.1
-mediapipe==0.8.10
+mediapipe==*
 opencv-python==4.6.0.66
 pyautogui==0.9.62
 comtypes==1.1.10
